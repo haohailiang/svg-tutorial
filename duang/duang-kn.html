@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Duang duang 知识点</title>
+    <style>
+    #polygon {
+      fill: pink;
+      stroke: red;
+      stroke-width: 6px;
+      /*分别代表了实线和虚线的长度*/
+      stroke-dasharray: 50 20;
+      /*stroke-dasharray: 1500;*/
+      /*代表了起点路径开始的距离*/
+      stroke-dashoffset: 30;
+      /*stroke-dashoffset: 1500;*/
+      /*透明度*/
+      /*fill-opacity: 0;*/
+      /*transition: .6s;*/
+    }
+    </style>
+</head>
+<body>
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="600px" height="300px" viewBox="0 0 600 300" enable-background="new 0 0 600 300" xml:space="preserve">
+<polygon id="polygon" points="89.571,6.648 513.333,6.648 590.25,75.342 553.002,215.306 313.065,273.358 300,293.352 288.876,272.71 
+	48.936,215.306 9.75,75.342 "/>
+</svg>
+</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="js/duang.js"></script>
+</html>

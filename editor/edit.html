@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>SVG编辑器</title>
+  <link rel="stylesheet" href="edit.css">
+  </head>
+  <body>
+  <div id="toolbox">
+    <h2>创建</h2>
+    <form id="create-shape">
+    <button type="button" create="rect">rect</button>
+    <button type="button" create="circle">circle</button>
+    <button type="button" create="ellipse">ellipse</button>
+    <button type="button" create="line">line</button>
+    </form>
+    <h2>形状</h2>
+    <form id="shape-attrs">
+    请先创建图形
+    </form>
+    <h2>外观和变换</h2>
+    <form id="look-and-transform" disabled="disabled">
+    <p>
+      <label style="display:inline;">填充</label>
+      <input id="fill" type="color" value="#ffffff" />
+    </p>
+    <p>
+      <label style="display:inline;">描边</label>
+      <input id="stroke" type="color" value="#ff0000" />
+      <input id="strokeWidth" type="range" value="1" />
+    </p>
+    <p>
+      <label>translateX</label>
+      <input id="translateX" type="range" min="-400" max="400" value="0" />
+
+      <label>translateY</label>
+      <input id="translateY" type="range" min="-400" max="400" value="0" />
+
+      <label>rotate</label>
+      <input id="rotate" type="range" min="-180" max="180" value="0" />
+
+      <label>scale</label>
+      <input id="scale" type="range" min="-1" max="2" step="0.01" value="1" />
+    </p>
+    </form>
+  </div>
+  <div id="canvas"></div>
+  <script src="edit.js" charset="utf-8"></script>
+  </body>
+</html>

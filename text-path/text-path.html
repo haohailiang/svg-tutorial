@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		html,body {
+			margin: 0;
+			height: 100vh;
+		}
+		body {
+			background: lightgray;
+		}
+		svg {
+			background: white;
+		}
+	</style>
+</head>
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+		<path id="path1" d="M 100 200 Q 200 100 300 200 T 500 200" stroke="rgb(0,255,0)" fill="none" />
+		<text style="font-size: 24px;">
+			<textPath xlink:href="#path1">
+				这个文字先上去, 又下来了. Upside down in english !
+			</textPath>
+		</text>
+	</svg>
+</body>
+</html>

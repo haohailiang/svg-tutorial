@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			background: lightgray;
+		}
+		svg {
+			background: white;
+		}
+	</style>
+</head>
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500">
+		<defs>
+			<pattern id="p1" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse" patternContentUnits="objectBoundingBox">
+				<circle cx="0.1" cy="0.1" r="0.1" fill="red"></circle>
+				<!--       <polygon points="30 10 60 50 0 50" fill="green"></polygon> -->
+			</pattern>
+		</defs>
+		<rect x="100" y="100" fill="url(#p1)" width="800" height="300" stroke="blue" />
+	</svg>
+</body>
+</html>

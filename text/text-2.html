@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			background: lightgray;
+		}
+		svg {
+			background: white;
+		}
+	</style>
+</head>
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500">
+		<defs>
+			<pattern id="grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+				<path stroke="#F0F0F0" fill="none" d="M0,0H20V20"></path>
+			</pattern>
+		</defs>
+		<rect fill="url(#grid)" width="1200" height="1000" />
+		<text x="100" y="100" dx="10" dy="10" style="font-size:50px;font-family: Arial">xX慕课网 - 您学习的好地方</text>
+		<path d="M100,0V200M0,100H200" stroke="red" />
+	</svg>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		html,body {
+			margin: 0;
+			height: 100vh;
+		}
+		body {
+			background: lightgray;
+		}
+		svg {
+			background: white;
+		}
+	</style>
+</head>
+<body>
+	<form id="ctrl">
+		<label>x:</label>
+		<input ctrl="x" type="range" value="0" min="-200" max="200" />
+		<label>y:</label>
+		<input ctrl="y" type="range" value="0" min="-200" max="200" />
+		<label>text-anchor:</label>
+		<select ctrl="text-anchor">
+			<option value="start" selected>start</option>
+			<option value="middle">middle</option>
+			<option value="end">end</option>
+		</select>
+		<label>startOffset:</label>
+		<input ctrl="startOffset" type="range" value="0" min="0" max="100" />
+		<button type="reset">reset</button>
+	</form>
+
+	<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600">
+		<path id="path1" d="M 100 200 Q 200 100 300 200 T 500 200" stroke="rgb(0,255,0)" fill="none" />
+		<g fill="red">
+			<circle cx="100" cy="200" r="3" />
+			<circle cx="300" cy="200" r="3" />
+			<circle cx="500" cy="200" r="3" />
+		</g>
+		<text style="font-size: 24px;">
+			<textPath xlink:href="#path1">
+				1234567890
+			</textPath>
+		</text>
+	</svg>
+
+	<script src="text-path2.js"></script>
+</body>
+</html>

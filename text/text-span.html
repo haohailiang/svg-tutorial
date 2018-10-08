@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		html,body {
+			margin: 0;
+			height: 100vh;
+		}
+		body {
+			background: lightgray;
+		}
+		svg {
+			background: white;
+		}
+		text {
+			font-size: 0;
+		}
+		tspan {
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+		<defs>
+			<pattern id="grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+				<path stroke="#F0F0F0" fill="none" d="M0,0H20V20"></path>
+			</pattern>
+		</defs>
+		<rect fill="url(#grid)" width="1200" height="1000" />
+		<text x="100" y="160" style="font-family: Arial" id="sintext"></text>
+		<path d="M100,0V200M0,100H200" stroke="red" />
+	</svg>
+	<script src="text-span.js"></script>
+</body>
+</html>
